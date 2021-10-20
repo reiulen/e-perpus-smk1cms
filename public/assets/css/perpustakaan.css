@@ -1,0 +1,360 @@
+
+.nav-hover a:hover{
+    color: blue !important;
+}
+
+.offcanvas-body .body-item:hover{
+    color: blue !important;
+    background: blue !important;
+}
+
+.min-vh-100{
+    height:  80vh !important;
+}
+
+.header-search .text-shadow{
+    text-shadow: 2px 2px 3px rgb(4, 4, 4);
+}
+
+.header-register{
+    border-radius: 200px;
+}
+
+section{
+    background-color: white;
+}
+
+.header-search{
+    position: absolute;
+    bottom: 33%;
+    z-index: 99;
+    display: block;
+}
+
+.main-header .content-search{
+    visibility: hidden;
+    z-index: 99;
+}
+
+@media (min-width: 600px){
+    .header-search{
+        position: absolute;
+        top: 30%;
+        left: 28%;
+    }
+    .main-header .content-search{
+        visibility: visible;
+    }
+}
+
+
+.header-search h1{
+    display: block !important;
+}
+
+.parallax .col-md-6{
+    z-index: 9;
+}
+
+.parallax .col-md-6:hover{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.content-body .col-md-4 .card{
+  margin: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 20px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 50%);
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
+.content-body .col-md-4 .card img{
+  border-radius: 5px;
+  object-fit:cover; 
+  object-position:center;
+}
+
+
+
+.kategori .navbar-d .navbar-nav .active{
+    color: #6777ef !important;
+}
+
+
+.kategori .navbar-d .navbar-nav .nav-link:hover::after{
+    content: '';
+    display: block;
+    border-radius: 12px;
+    border-bottom: 4px solid #6777ef;
+}
+
+.kategori .navbar-d .navbar-nav .active::after{
+    content: '';
+    display: block;
+    border-bottom: 4px solid #6777ef;
+    border-radius: 12px;
+}
+
+.kategori .navbar-d .navbar-nav .nav-link{
+    cursor: pointer;
+}
+
+
+.kategori .navbar-d{
+    background: transparent !important;
+}
+
+.isi-kategori .card{
+    position: relative;
+    width: 240px;
+    height: 250px;
+    margin: 10px auto;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.isi-kategori .card::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 6px;
+    transition: 0.9s;
+    background-color: rgba(0, 0, 0, 0.364)
+}
+
+.isi-kategori .card:hover::after{
+    opacity: 1;
+}
+
+
+.isi-kategori .card .content{
+    padding: 10px;
+    align-items: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.isi-kategori .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.isi-kategori .card .content h4{
+    color: #ffff;
+    z-index: 1;
+}
+
+.isi-kategori .card .content .lihat-selengkapnya{
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow:  0 5px 15px rgba(75, 53, 53, 0.5);
+}
+
+/*.buku-terpopuler::before{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #6777ef41;
+    clip-path: circle(200px at center);
+}*/
+
+.buku-terpopuler h2::after{
+    content: '';
+    display: block;
+    width: 10%;
+    border-bottom: 2px solid #6777ef;
+    border-radius: 12px;
+    margin: 10px auto;
+}
+
+.buku-terpopuler .card{
+    position: relative;
+    width: 240px;
+    height: 250px;
+    margin: 10px auto;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.buku-terpopuler .card::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 6px;
+    transition: 0.9s;
+    background-color: rgba(0, 0, 0, 0.364)
+}
+
+.buku-terpopuler .card:hover::after{
+    opacity: 1;
+}
+
+
+.buku-terpopuler .card .content{
+    padding: 10px;
+    align-items: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.buku-terpopuler .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.buku-terpopuler .card .content h4{
+    color: #ffff;
+    z-index: 1;
+}
+
+.buku-terpopuler .card .content .lihat-selengkapnya{
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow:  0 5px 15px rgba(75, 53, 53, 0.5);
+}
+
+.detail-buku{
+    background-color: transparent !important;
+}
+
+.detail-buku .card{
+    border-radius: 12px;
+    background: radial-gradient(circle at top left, #6777ef, #2c3cb3); 
+    color: #dadada;
+    box-shadow:  0 5px 15px rgba(75, 53, 53, 0.5);
+}
+
+.detail-buku .row{
+    z-index: 99;
+}
+
+.detail-buku .card .col-8{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list-semua-buku .row .card{
+    position: relative;
+    width: 240px;
+    height: 250px;
+    margin: 10px auto;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.20);
+}
+
+
+
+.list-semua-buku .row .card::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 6px;
+    transition: 0.9s;
+    background-color: rgba(0, 0, 0, 0.364)
+}
+
+.list-semua-buku .row .card:hover::after{
+    opacity: 1;
+}
+
+
+.list-semua-buku .row .card .content{
+    padding: 10px;
+    align-items: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.list-semua-buku .row .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.list-semua-buku .row .card .content h4{
+    color: #ffff;
+    z-index: 1;
+}
+
+.list-semua-buku .row .card .content .lihat-selengkapnya{
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow:  0 5px 15px rgba(75, 53, 53, 0.5);
+}
+
+
+footer{
+    background-color: white;
+    color: rgba(15, 15, 15, 0.713);
+    padding: 50px;
+}
+
+footer ul{
+    padding-left: 10px !important;
+}
+
+footer ul li{
+    list-style: none !important;
+}
